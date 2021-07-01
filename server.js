@@ -14,8 +14,10 @@ app.get("/", (req, res) => {
     }
 
     data = data
-      .replace(/__TITLE__/g, "Home Page")
-      .replace(/__DESCRIPTION__/g, "Home page description.");
+      .replace(/__TITLE__/g, "SeekerPitch")
+      .replace(/__DESCRIPTION__/g, "Testing Seekerpitch")
+      .replace(/__IMAGE__/g, "https://seekerpitch.com/static/media/logo.8d0abd02.svg")
+      ;
 
     res.send(data)
   });
@@ -29,8 +31,8 @@ app.get("/about", (req, res) => {
     }
 
     data = data
-      .replace(/__TITLE__/g, "About Page")
-      .replace(/__DESCRIPTION__/g, "About page description.");
+      .replace(/__TITLE__/g, "Seekerpitch")
+      .replace(/__DESCRIPTION__/g, "Test page description.");
 
     res.send(data)
   });
